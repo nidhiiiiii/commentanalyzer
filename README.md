@@ -1,5 +1,4 @@
 # nisummarizer
-Sure, here's a sample README.md file for the text summarization code:
 
 # Text Summarization using NLP
 
