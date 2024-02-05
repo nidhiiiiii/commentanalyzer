@@ -1,0 +1,261 @@
+.message-page-main{
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+
+}
+.message-main{
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: #111827;
+    /* background-color:rgba(17,24,39,var(--tw-bg-opacity));
+    --bg-opacity: 0.4; */
+    /* background: linear-gradient(62deg, #69cfaf, #25c1bc, #00b1c9, #009ed0, #0089cd, #3e83c9, #587cc3, #6b76bb, #8381ba, #958db9, #a49ab8, #b0a8b9);
+    animation: gradient 8s ease infinite; 
+     background-size: 400% 400%;
+ 
+}
+@-webkit-keyframes gradient{
+ 0% {
+   background-position: 0 50%;
+ }
+ 50% {
+   background-position: 100% 50%;
+ }
+ 100% {
+    background-position: 0% 50%;
+ }
+}
+@keyframes gradient{
+ 0% {
+   background-position: 0 50%;
+ }
+ 50% {
+   background-position: 100% 50%;
+ }
+ 100% {
+    background-position: 0% 50%;
+ } */
+    /* background-color: #845EC2; */
+    /* background-image: linear-gradient(to right top, #69cfaf, #25c1bc, #00b1c9, #009ed0, #0089cd, #3e83c9, #587cc3, #6b76bb, #8381ba, #958db9, #a49ab8, #b0a8b9); */
+    /* background-image: linear-gradient(to right top, #d16ba5, #bf69ae, #aa68b5, #9068bb, #7269be, #6f6ebd, #6c72bc, #6b76bb, #8381ba, #958db9, #a49ab8, #b0a8b9); */
+}
+
+.message-page{
+    height: 100vh;
+    width: 100vw;
+    /* background-color:#1F2937; */
+    /* background-color:rgba(17,24,39,var(--tw-bg-opacity)); */
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+
+}
+.send-button{
+    justify-content: center;
+    /* height: 50px; */
+    margin-left: 750px;
+    margin-top: 20px;
+    width: 115.2px;
+    height: 35.2px;
+    border-radius: 5px;
+    background-color: pink;
+}
+.phn-number{
+    height: 30px;
+    width: 200px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 150px;
+    margin-right: 100px;
+    border-radius: 5px;
+    border-style: none;
+}
+.individual-message{
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 88vw;
+    border-radius: 5px;
+    /* border-width:2px;
+    border-color: grey; */
+    /* border-color: none; */
+    overflow:visible;
+    position:static;
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    border-radius: 0.25rem; 
+    border-width: 2px; 
+    border-color: #374151; 
+    outline-style: none; 
+    font-size: 1rem;
+    line-height: 1.5rem; 
+    line-height: 2rem; 
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem; 
+  padding-left: 0.75rem;
+  padding-right: 0.75rem; 
+  border-radius: 0.25rem; 
+  border-width: 1px; 
+  border-color: #374151; 
+  outline-style: none; 
+  font-size: 1rem;
+  line-height: 1.5rem; 
+  line-height: 2rem; 
+  color: #F3F4F6; 
+  background-color: #1F2937; 
+  --bg-opacity: 0.4; 
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms; 
+  transition-duration: 200ms; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+  resize: none;
+
+}
+.individual-message-box{
+  height: auto;
+  width: auto;
+  resize: none;
+  background-color: #1F2937;
+  border-color: #374151;
+  border-radius: 0.25rem; 
+  border-width: 1px;
+  --bg-opacity: 0.4; 
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms; 
+  transition-duration: 200ms; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.individual-message-box:focus {
+    background-color:#f8f8f8; 
+    border-width:2px;
+    border-color:#4c53d6;
+    color: #111827;}
+.individual-message::-webkit-scrollbar {
+    width: 30px;
+  }
+
+/* .bulk-message{
+    margin-left: 100px;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    flex-direction:row;
+    height: 100px;
+    width: 560px;
+    border-radius: 5px;
+    border-style: hidden;
+    overflow: y visible 0;
+
+} */
+/* .bulk-message{
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    width: 80vw;
+    border-width:2px;
+    border-radius: 5px;
+    overflow: y visible 0;
+    position:static;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #111827;
+} */
+.bulk-message{
+  justify-content: center;
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+  width: 80vw;
+  border-radius: 5px;
+  /* border-width:2px;
+  border-color: grey; */
+  /* border-color: none; */
+  overflow: y visible 0;
+  position:static;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 0.25rem; 
+  border-width: 2px; 
+  border-color: #374151; 
+  outline-style: none; 
+  font-size: 1rem;
+  line-height: 1.5rem; 
+  line-height: 2rem; 
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem; 
+  padding-left:50px;
+  padding-right: 0.75rem; 
+  border-radius: 0.25rem; 
+  border-width: 1px; 
+  border-color: #374151; 
+  outline-style: none; 
+  width: 100%; 
+  font-size: 1rem;
+  line-height: 1.5rem; 
+  line-height: 2rem; 
+  color: #F3F4F6; 
+  background-color: #1F2937; 
+  --bg-opacity: 0.4; 
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms; 
+  transition-duration: 200ms; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+
+}
+.bulk-message:focus {
+  /* background-color:#f8f8f8;  */
+  border-width:4px;
+  border-color: aqua;
+  outline-color: #4c53d6;
+  /* border-top:#374151; */
+}
+/* .bulk-message::-webkit-scrollbar {
+  width: 30px;
+}.bulk-message:focus {
+    background-color:#f8f8f8; 
+    border-width:2px;
+    border-color:#4c53d6;
+    color: #111827;} */
+.bulk-message::-webkit-scrollbar {
+    width: 30px;
+  }
+.csv-upload{
+    height: 35px;
+    margin: 30px 30px 30px 30px;
+}
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: green;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .custom-file-upload:hover {
+    background-color: darkgreen;
+  }
