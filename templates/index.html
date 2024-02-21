@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Comment Sentiment Analysis</title>
+  </head>
+  <body>
+    <form action="/analyze/" method="post">
+      <input type="hidden" name="url" value="{{ request.form['url'] }}" />
+      <input type="hidden" name="download" value="true" />
+      <input type="submit" value="Download" />
+    </form>
+  </body>
+</html>

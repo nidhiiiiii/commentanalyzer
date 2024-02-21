@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Analysis Results</title>
+  </head>
+  <body>
+    <h1>Comments and Sentiments</h1>
+    {% for comment, sentiment in comments_data.items() %}
+    <p>Comment: {{ comment }} - Sentiment: {{ sentiment }}</p>
+    {% endfor %}
+  </body>
+</html>
