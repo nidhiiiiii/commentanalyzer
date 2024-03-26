@@ -8,10 +8,18 @@ const App = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
+  // const handleUrlChange = (event) => {
+  //   setUrl(event.target.value);
+  // };
   const handleUrlChange = (event) => {
-    setUrl(event.target.value);
+    const url = event.target.value;
+    const regex = /https?:\/\/(www\.)?instagram\.com\/p\/[a-zA-Z0-9_\-]+\/?/;
+    if (!regex.test(url)) {
+      alert('Please enter a valid Instagram URL');
+      return;
+    }
+    setUrl(url);
   };
-
   const handleDownloadChange = (event) => {
     setDownload(event.target.checked);
   };
@@ -26,6 +34,30 @@ const App = () => {
     setIsSubmitted(true);
   };
   
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch('http://localhost:8000/api/analyze', {
+  //         method: 'POST',
+  //         headers: {
+  //           'Content-Type': 'application/json',
+  //         },
+  //         body: JSON.stringify({ url, download }),
+  //       });
+  //       const data = await response.json();
+  //       setCommentsData(data.result);
+  //     } catch (error) {
+  //       console.error('Error fetching analysis results', error);
+  //     } finally {
+  //       setIsLoading(false);
+  //     }
+  //   };
+
+  //   if (isSubmitted) {
+  //     fetchData();
+  //     setIsSubmitted(false);
+  //   }
+// }, [isSubmitted, url, download]);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -38,18 +70,26 @@ const App = () => {
         });
         const data = await response.json();
         setCommentsData(data.result);
+        if (download) {
+          // Create a link to download the CSV file
+          const link = document.createElement('a');
+          link.href = 'http://localhost:8000/static/analysis_results.csv';
+          link.download = 'analysis_results.csv';
+          link.click();
+        }
       } catch (error) {
         console.error('Error fetching analysis results', error);
       } finally {
         setIsLoading(false);
       }
     };
-
+  
     if (isSubmitted) {
       fetchData();
       setIsSubmitted(false);
     }
   }, [isSubmitted, url, download]);
+
 
 
   return (
